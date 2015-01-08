@@ -3,6 +3,8 @@
  */
 package at.fhooe.mc.test;
 
+import java.rmi.RemoteException;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -188,4 +190,30 @@ public class ElevatorManualModeUsingMockTest {
 
 	}
 
+	@Test
+	public final void testCommittedDirectionException(){
+		
+		boolean exceptionOcurred = false;
+		
+		// currently mock is supporting only 4 elevators, numbered from 1-4, so
+		try {
+			iElevatorControls.setCommittedDirection(5, IElevatorControls.ELEVATOR_DIRECTION_UP);
+		} catch (RemoteException e) {
+			exceptionOcurred = true;
+		}
+		
+		Assert.assertTrue(exceptionOcurred);
+		
+		exceptionOcurred = false;
+		
+		// currently mock is supporting only 4 elevators, numbered from 1-4, so
+		try {
+			iElevatorControls.getCommittedDirection(5);
+		} catch (RemoteException e) {
+			exceptionOcurred = true;
+		}
+
+		Assert.assertTrue(exceptionOcurred);
+	}
+	
 }

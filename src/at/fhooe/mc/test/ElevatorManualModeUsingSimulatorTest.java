@@ -118,7 +118,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 		
 		// give some time to elevator to actually go there
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -168,7 +168,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 		
 		// give some time to elevator to actually go there
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
