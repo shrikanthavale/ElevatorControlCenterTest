@@ -1,6 +1,10 @@
 package at.fhooe.mc.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.rmi.RemoteException;
 
@@ -12,6 +16,7 @@ import org.junit.Test;
 
 import sqelevator.IElevator;
 import at.fhooe.mc.controller.ElevatorAdapter;
+import at.fhooe.mc.model.ElevatorMock;
 
 public class ElevatorAdapterTest {
     private static ElevatorAdapter m_adapter = null;

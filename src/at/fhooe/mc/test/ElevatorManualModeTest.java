@@ -15,6 +15,7 @@ import at.fhooe.mc.controller.ElevatorController;
 import at.fhooe.mc.controller.ElevatorUpdater;
 import at.fhooe.mc.controller.IElevatorControls;
 import at.fhooe.mc.model.Elevator;
+import at.fhooe.mc.model.ElevatorMock;
 
 /**
  * @author Metrics_Testing Team Dec 17, 2014
