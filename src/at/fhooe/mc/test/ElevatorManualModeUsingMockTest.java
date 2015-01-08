@@ -21,7 +21,7 @@ import at.fhooe.mc.model.ElevatorMock;
  * @author Metrics_Testing Team Dec 17, 2014
  * 
  */
-public class ElevatorManualModeTest {
+public class ElevatorManualModeUsingMockTest {
 
 	/**
 	 * Elevator Adapter

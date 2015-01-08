@@ -13,7 +13,7 @@ import org.junit.runners.Suite.SuiteClasses;
  *
  */
 @RunWith(Suite.class)
-@SuiteClasses({ ElevatorAdapterTest.class, ElevatorManualModeTest.class })
+@SuiteClasses({ ElevatorAdapterTest.class, ElevatorManualModeUsingMockTest.class, ElevatorManualModeUsingSimulatorTest.class })
 public class AllTests {
 
 }
