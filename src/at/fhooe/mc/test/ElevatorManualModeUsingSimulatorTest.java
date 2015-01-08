@@ -21,6 +21,8 @@ import at.fhooe.mc.model.Elevator;
 import at.fhooe.mc.model.ElevatorMock;
 
 /**
+ * Test case will fall back to use Mock, if simulator is closed
+ * 
  * @author Metrics_Testing Team Dec 17, 2014
  * 
  */
@@ -125,7 +127,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 		String actualDoorStatus = "";
 		String actualDirection = "";
 
-		Assert.assertEquals("Target Floor Don't Match", 4, elevator.getCurrentFloor());
+		Assert.assertEquals("Target Floor Don't Match", 4, elevator.getPosition());
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
@@ -173,7 +175,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 
 		elevator = elevatorUpdater.getElevator();
 		
-		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getCurrentFloor());
+		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getPosition());
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
