@@ -77,9 +77,9 @@ public class ElevatorAdapterTest {
     @Test
     public void testGetElevatorDoorStatus(){
     	try{
-    		assertEquals(IElevator.ELEVATOR_DOORS_CLOSED, m_adapter.getElevatorDoorStatus(1));
+    		assertEquals(IElevator.ELEVATOR_DOORS_OPEN, m_adapter.getElevatorDoorStatus(1));
     		assertEquals(IElevator.ELEVATOR_DOORS_OPENING, m_adapter.getElevatorDoorStatus(2));
-    		assertEquals(IElevator.ELEVATOR_DOORS_OPEN, m_adapter.getElevatorDoorStatus(3));
+    		assertEquals(IElevator.ELEVATOR_DOORS_CLOSED, m_adapter.getElevatorDoorStatus(3));
     		assertEquals(IElevator.ELEVATOR_DOORS_CLOSING, m_adapter.getElevatorDoorStatus(4));
     	} catch (RemoteException e){
     		fail();

@@ -103,7 +103,7 @@ public class ElevatorManualModeUsingMockTest {
 		String actualDoorStatus = "";
 		String actualDirection = "";
 
-		Assert.assertEquals("Target Floor Don't Match", 4, elevator.getTarget());
+		Assert.assertEquals("Target Floor Don't Match", 4, elevator.getCurrentFloor());
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
@@ -122,7 +122,7 @@ public class ElevatorManualModeUsingMockTest {
 			actualDoorStatus = "Default";
 		}
 
-		Assert.assertEquals("Door Status Don't Match", DOOR_STATUS_CLOSED,
+		Assert.assertEquals("Door Status Don't Match", DOOR_STATUS_OPEN,
 				actualDoorStatus);
 
 		switch (elevator.getCurrentDirection()) {
@@ -150,7 +150,7 @@ public class ElevatorManualModeUsingMockTest {
 
 		elevator = elevatorUpdater.getElevator();
 		
-		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getTarget());
+		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getCurrentFloor());
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
@@ -169,7 +169,7 @@ public class ElevatorManualModeUsingMockTest {
 			actualDoorStatus = "Default";
 		}
 
-		Assert.assertEquals("Door Status Don't Match", DOOR_STATUS_CLOSED,
+		Assert.assertEquals("Door Status Don't Match", DOOR_STATUS_OPEN,
 				actualDoorStatus);
 
 		switch (elevator.getCurrentDirection()) {
