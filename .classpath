@@ -4,5 +4,14 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/ElevatorControlCenter"/>
+	<classpathentry kind="lib" path="lib/commonRuntime.jar"/>
+	<classpathentry kind="lib" path="lib/swingRuntime.jar"/>
+	<classpathentry kind="lib" path="lib/wt-runtime.jar"/>
+	<classpathentry kind="lib" path="lib/com.instantiations.common.core_6.0.0.r36x201009131414.jar"/>
+	<classpathentry kind="lib" path="lib/com.instantiations.eclipse.debug_6.0.0.r36x201009131414.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.core.runtime_3.9.0.v20130326-1255.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.jface_3.9.1.v20130725-1141.jar"/>
+	<classpathentry kind="lib" path="lib/org.eclipse.osgi_3.9.1.v20130814-1242.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
