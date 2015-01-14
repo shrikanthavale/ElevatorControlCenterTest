@@ -149,7 +149,7 @@ public class ElevatorAdapterTest {
     @Test
     public void testGetElevatorCapacity(){
     	try{
-    		assertEquals(0, m_adapter.getElevatorCapacity(1));
+    		assertEquals(15, m_adapter.getElevatorCapacity(1));
     		assertEquals(5, m_adapter.getElevatorCapacity(2));
     		assertEquals(7, m_adapter.getElevatorCapacity(3));
     		assertEquals(10, m_adapter.getElevatorCapacity(4));

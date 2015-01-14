@@ -128,6 +128,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 		String actualDirection = "";
 
 		Assert.assertEquals("Target Floor Don't Match", 4, elevator.getPosition());
+		Assert.assertEquals("Elevator Capacity is less than zero", true, elevator.getCapacity() > 0);
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
@@ -176,6 +177,7 @@ public class ElevatorManualModeUsingSimulatorTest {
 		elevator = elevatorUpdater.getElevator();
 		
 		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getPosition());
+		Assert.assertEquals("Elevator Capacity is less than zero", true, elevator.getCapacity() > 0);
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
