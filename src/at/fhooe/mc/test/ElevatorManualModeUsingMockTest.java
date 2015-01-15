@@ -143,8 +143,8 @@ public class ElevatorManualModeUsingMockTest {
 		
 		Assert.assertEquals("Elevator Capacity is less than zero", true, elevator.getCapacity() > 0);
 		
-		// go to floor number 4 , for example
-		elevatorController.setTarget(1);
+		// go to floor number 1 , for example
+		elevatorController.setTarget(2);
 		
 		try {
 			Thread.sleep(500);
@@ -154,7 +154,7 @@ public class ElevatorManualModeUsingMockTest {
 
 		elevator = elevatorUpdater.getElevator();
 		
-		Assert.assertEquals("Target Floor Don't Match", 1, elevator.getPosition());
+		Assert.assertEquals("Target Floor Don't Match", 2, elevator.getPosition());
 
 		switch (elevator.getDoorStatus()) {
 		case 1:
@@ -188,7 +188,7 @@ public class ElevatorManualModeUsingMockTest {
 		}
 
 		Assert.assertEquals("Elevator Direction Status Don't match",
-				ELEVATOR_DIRECTION_DOWN, actualDirection);
+				ELEVATOR_DIRECTION_UP, actualDirection);
 		Assert.assertEquals("Elevator Capacity is less than zero", true, elevator.getCapacity() > 0);
 
 	}
